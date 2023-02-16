@@ -1,5 +1,6 @@
 <script setup>
 import HomePage from './components/HomePage.vue'
+import ResourcesData from './components/ResourcesData.vue'
 </script>
 
 <script>
@@ -14,6 +15,10 @@ export default {
 
 <template>
 <main>
+  <div class="master_div">
+    <div class="resources_data">
+      <ResourcesData></ResourcesData>
+    </div>
     <div class="main_div">
       <div class="tabs_bar">
         <div v-if="page == 'home'" class="tab_icon active">
@@ -53,6 +58,7 @@ export default {
         </div>
       </div>
     </div>
+  </div>
 </main>
 </template>
 

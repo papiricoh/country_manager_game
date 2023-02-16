@@ -39,6 +39,10 @@ export default {
         <CountryData></CountryData>
       </div>
     </div>
-    <div class="box"></div>
+    <div class="box fullscreen">
+      <div>
+
+      </div>
+    </div>
   </div>
 </template>

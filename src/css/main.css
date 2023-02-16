@@ -88,6 +88,7 @@ body {
 }
 
 .box {
+    margin: 4px;
     border: 0 solid transparent;
     border-radius: 0.3rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.236);
@@ -121,3 +122,19 @@ body {
 .next_turn_box:active {
     background-color: black;
 }
+
+.fullscreen {
+    height: 57rem;
+}
+
+.master_div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.resources_data{
+    height: 3rem;
+    border-bottom: 0.2rem solid;
+    background-color: gray;
+} 
