@@ -3,8 +3,15 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <main>
-    <div>HOLA</div>
+<main>
+    <div class="main_div">
+      <div class="tabs_bar">
+        
+      </div>
+      <div>
+        
+      </div>
+    </div>
 </main>
 </template>
 
