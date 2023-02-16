@@ -7,7 +7,9 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faMoneyBill } from '@fortawesome/free-solid-svg-icons'
+import { faWrench } from '@fortawesome/free-solid-svg-icons'
+import { faCheckToSlot } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faUserSecret, faHouse, faGlobe, faMoneyBill)
+library.add(faUserSecret, faHouse, faGlobe, faMoneyBill, faWrench, faCheckToSlot)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
