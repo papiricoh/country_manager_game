@@ -16,7 +16,7 @@ export default {
 <template>
 <main>
   <div class="master_div">
-    <div class="resources_data">
+    <div>
       <ResourcesData></ResourcesData>
     </div>
     <div class="main_div">
