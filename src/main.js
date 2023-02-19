@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import VueApexCharts from "vue3-apexcharts";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -13,4 +14,8 @@ import { faForward } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faUserSecret, faHouse, faGlobe, faMoneyBill, faWrench, faCheckToSlot, faForward)
 
-createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
+const app = createApp(App);
+
+app.use(VueApexCharts);
+
+app.component('font-awesome-icon', FontAwesomeIcon).mount('#app')

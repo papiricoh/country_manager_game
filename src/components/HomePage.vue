@@ -1,5 +1,7 @@
 <script setup>
 import CountryData from './CountryData.vue'
+import DataTable from './DataTable.vue'
+import AreaGraph from './charts/AreaGraph.vue'
 </script>
 
 <script>
@@ -39,9 +41,22 @@ export default {
         <CountryData></CountryData>
       </div>
     </div>
-    <div class="box fullscreen">
-      <div>
-
+    <div class="box fullscreen flex-column">
+      <div class="flex-data">
+        <div class="chart_container">
+          <AreaGraph></AreaGraph>
+        </div>
+        <div class="box data-box">
+          <div class="box">
+            <DataTable></DataTable>
+          </div>
+          <div class="box">
+            <DataTable></DataTable>
+          </div>
+          <div class="box">
+            <DataTable></DataTable>
+          </div>
+        </div>
       </div>
     </div>
   </div>

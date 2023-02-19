@@ -141,3 +141,35 @@ body {
     justify-content: space-around;
     align-items: center;
 } 
+
+.flex-data {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-table {
+    text-align: center;
+    padding: 10px;
+    border-collapse: collapse;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+}
+.data-table > tr:hover {
+    background-color: rgba(128, 128, 128, 0.38);
+}
+
+.data-table > tr > td, th {
+    padding: 12px;
+    
+}
+.data-box {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
