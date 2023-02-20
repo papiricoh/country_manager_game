@@ -51,12 +51,21 @@ export default {
         </div>
         <div class="box data-box">
           <div class="box">
-            <DataTable :table_title="'County Market'" :data="[['1a linea', 'segunda linea'],
-             ['3a linea', 'cuarta linea']]" :titles="['Imports', 'Exports']"></DataTable>
+            <DataTable :table_title="'County Market'" :data="[['Wheat', 'Import', 10000],
+             ['Energy', 'Export', 100000]]" :titles="['Product', 'Type', 'Total Value']"></DataTable>
           </div>
           <div class="box">
             <DataTable :table_title="'Top Companies'" :data="[['NationalTelecom', 'Public', 201030]]" :titles="['Name', 'Type', 'Market Cap']"></DataTable>
           </div>
+        </div>
+      </div>
+      <div class="flex-data">
+        <div>
+          <!-- Internal economy resume -->
+          
+        </div>
+        <div>
+          <!-- Internal economy graph -->
         </div>
       </div>
     </div>
