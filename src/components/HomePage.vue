@@ -14,7 +14,7 @@ export default {
       date_year: 1900,
 
       historic_gdp: [1200000, 1000000, 1000000, 1800000],
-      historic_pops: [80000, 200000, 10000]
+      historic_pops: [80000, 200000, 10000, 1800000]
     }
   },
   methods: {
@@ -47,7 +47,7 @@ export default {
     <div class="box fullscreen flex-column">
       <div class="flex-data">
         <div class="chart_container">
-          <AreaGraph :series="[{name: country_name , data: historic_gdp}]"></AreaGraph>
+          <AreaGraph :series="[{name: country_name + '\'s GDP' , data: historic_gdp}, {name: country_name + '\'s Population' , data: historic_pops}]"></AreaGraph>
         </div>
         <div class="box data-box">
           <div class="box">
