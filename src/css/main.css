@@ -159,7 +159,7 @@ body {
     -webkit-border-horizontal-spacing: 0;
     -webkit-border-vertical-spacing: 0;
 }
-.data-table > tr:hover {
+.data-table > tr > td:hover, th:hover {
     background-color: rgba(128, 128, 128, 0.38);
     border-radius: 0.3rem;
 }
@@ -169,8 +169,11 @@ body {
     
 }
 .data-box {
+    width: 100%;
     margin: 20px;
     padding: 10px;
     display: flex;
+    flex-direction: row-reverse;
     align-items: flex-start;
+    justify-content: space-around;
 }

@@ -41,7 +41,7 @@ export default {
         <div @click="nextTurn()" class="next_turn_box">
           <font-awesome-icon icon="fa-solid fa-forward" />
         </div>
-        <CountryData></CountryData>
+        <CountryData :country_population="historic_pops[historic_pops.length - 1]" :country_gdp="historic_gdp[historic_gdp.length - 1]"></CountryData>
       </div>
     </div>
     <div class="box fullscreen flex-column">
@@ -51,13 +51,11 @@ export default {
         </div>
         <div class="box data-box">
           <div class="box">
-            <DataTable></DataTable>
+            <DataTable :table_title="'County Market'" :data="[['1a linea', 'segunda linea'],
+             ['3a linea', 'cuarta linea']]" :titles="['Imports', 'Exports']"></DataTable>
           </div>
           <div class="box">
-            <DataTable></DataTable>
-          </div>
-          <div class="box">
-            <DataTable></DataTable>
+            <DataTable :table_title="'Top Companies'" :data="[['NationalTelecom', 'Public', 201030]]" :titles="['Name', 'Type', 'Market Cap']"></DataTable>
           </div>
         </div>
       </div>

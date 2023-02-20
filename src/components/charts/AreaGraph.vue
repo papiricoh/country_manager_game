@@ -36,7 +36,7 @@ export default {
                     opposite: true
                 },
                 legend: {
-                    show: false,
+                    show: true,
                 }
             },
         }
