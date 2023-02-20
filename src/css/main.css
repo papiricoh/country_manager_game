@@ -161,6 +161,7 @@ body {
 }
 .data-table > tr:hover {
     background-color: rgba(128, 128, 128, 0.38);
+    border-radius: 0.3rem;
 }
 
 .data-table > tr > td, th {

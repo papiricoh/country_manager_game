@@ -11,7 +11,10 @@ export default {
       country_title: 'Kingdom of ',
       country_name: 'Spain',
       date_month: 1,
-      date_year: 1900
+      date_year: 1900,
+
+      historic_gdp: [1200000, 1000000, 1000000, 1800000],
+      historic_pops: [80000, 200000, 10000]
     }
   },
   methods: {
@@ -44,7 +47,7 @@ export default {
     <div class="box fullscreen flex-column">
       <div class="flex-data">
         <div class="chart_container">
-          <AreaGraph></AreaGraph>
+          <AreaGraph :series="[{name: country_name , data: historic_gdp}]"></AreaGraph>
         </div>
         <div class="box data-box">
           <div class="box">
