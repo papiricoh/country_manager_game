@@ -13,8 +13,8 @@ export default {
       date_month: 1,
       date_year: 1900,
 
-      historic_gdp: [1200000, 1000000, 1000000, 1800000],
-      historic_pops: [80000, 200000, 10000, 1800000]
+      historic_gdp: [120000000, 100000000, 100000000, 180000000],
+      historic_pops: [800000, 2000000, 100000, 12800000]
     }
   },
   methods: {

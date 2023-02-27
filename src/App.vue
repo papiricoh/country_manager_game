@@ -1,6 +1,7 @@
 <script setup>
 import HomePage from './components/HomePage.vue'
 import ResourcesData from './components/ResourcesData.vue'
+import PoliticsPage from './components/PoliticsPage.vue'
 </script>
 
 <script>
@@ -55,6 +56,9 @@ export default {
       <div class="tab_data"> <!-- MAIN TAB -->
         <div v-if="page == 'home'">
           <HomePage></HomePage>
+        </div>
+        <div class="all_heigh" v-if="page == 'politics'">
+          <PoliticsPage></PoliticsPage>
         </div>
       </div>
     </div>
