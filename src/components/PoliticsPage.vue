@@ -20,13 +20,30 @@ export default {
     }
   },
   methods: {
+    getPartyByName(name) {
+      for (let index = 0; index < this.parties.length; index++) {
+        if(name == this.parties[index].name) {
+          return this.parties[index];
+        }
+      }
+      return null;
+    },
+    getPartyTitle() {
+      var party = this.getPartyByName(this.selectedParty)
+      if(party != null) {
+        return party.name;
+      }
+      return "Party Screen";
+    }
   }
 }
 </script>
 
 <template>
   <div class="flex-row space-b">
-    <div></div>
+    <div class="party_data box">
+      <div class="title">{{ getPartyTitle() }}</div>
+    </div>
     <div class="box side_box">
       <div class="subtitle">List of political parties</div>
       <ul class="party_list" >

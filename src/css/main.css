@@ -231,3 +231,14 @@ body {
 .selected:hover {
     background-color: rgba(5, 15, 107, 0.493);
 }
+
+.party_data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.party_data > .title {
+    margin: 20px;
+}
